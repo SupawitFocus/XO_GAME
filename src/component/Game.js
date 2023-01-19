@@ -86,7 +86,14 @@ const Game = () => {
       <div>
         {/* <h3 className="mgt-10">History</h3>
         {renderMoves()} */}
-        <h3>{status ? "Result: " + status : "Next Player: " + xO}</h3>
+        <h3>{status ? "Result: " + status : "Next Player: " + xO}  <button
+            className="btn-reset"
+            onClick={() => {
+              window.location.reload(false);
+            }}
+          >
+            reset
+          </button></h3>
       </div>
     </>
   );

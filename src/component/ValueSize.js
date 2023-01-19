@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-
 const ValueSize = (props) => {
   const [size, setSize] = useState(0);
   //const [history, setHistory] = useState([Array(9).fill('')]);
- 
+
   const saveSize = (event) => {
     event.preventDefault();
     const dataSize = Number(size);
@@ -14,7 +13,6 @@ const ValueSize = (props) => {
     setSize(e.target.value);
   };
 
-
   return (
     <>
       <div className="boxnum">
@@ -23,11 +21,17 @@ const ValueSize = (props) => {
             Input Size :{" "}
             <input type={"text"} onChange={inputSize} id="number"></input>
           </label>
-          <button type="submit" id="enter" onClick={(e)=>{
-            e.target.style.visibility = "hidden";
-          }}>
+          <button
+            type="submit"
+            className="btn-reset"
+            id="enter"
+            onClick={(e) => {
+              e.target.style.visibility = "hidden";
+            }}
+          >
             Enter
           </button>
+          
         </form>
       </div>
     </>

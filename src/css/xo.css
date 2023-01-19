@@ -45,7 +45,7 @@ input#number {
     padding-bottom: 5px;
 }
 
-button#enter {
+.btn-reset {
     padding: 5px 10px;
     margin: 0 0 0 5px;
     color: white;
