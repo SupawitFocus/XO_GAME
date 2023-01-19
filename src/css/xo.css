@@ -79,3 +79,15 @@ a{
     margin-top: 30px;
     margin-bottom: 10px;
 }
+.his-card{
+    background-color: rgb(190, 0, 0);
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+}
+.his-card li{
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    color: white;
+    text-align: center;
+}

@@ -32,7 +32,7 @@ const Game = () => {
   const onAddNewItem = (NewValue) => {
     let a = NewValue ** 2;
     history[0] = [];
-    setSize(NewValue);
+    setSize(history[0]);
     console.log(size);
     for (let i = 0; i < a; i++) {
       history[0].push("");
@@ -84,8 +84,8 @@ const Game = () => {
         gridC={{ board }}
       />
       <div>
-        <h3 className="mgt-10">History</h3>
-        {renderMoves()}
+        {/* <h3 className="mgt-10">History</h3>
+        {renderMoves()} */}
         <h3>{status ? "Result: " + status : "Next Player: " + xO}</h3>
       </div>
     </>

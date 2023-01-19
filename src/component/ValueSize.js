@@ -23,7 +23,9 @@ const ValueSize = (props) => {
             Input Size :{" "}
             <input type={"text"} onChange={inputSize} id="number"></input>
           </label>
-          <button type="submit" id="enter">
+          <button type="submit" id="enter" onClick={(e)=>{
+            e.target.style.visibility = "hidden";
+          }}>
             Enter
           </button>
         </form>

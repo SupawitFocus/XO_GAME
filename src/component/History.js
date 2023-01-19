@@ -19,9 +19,9 @@ const History = () => {
     return (<>
         <div>
             {
-              dataList ? dataList.map((e)=>{
+              dataList ? dataList.reverse().map((e)=>{
                 return(  
-                <ul key={e.id}>
+                <ul key={e.id} className="his-card">
                   <li>{e.winner}</li>
                   <li>{e.date}</li>
                   <li>{e.time}</li>
