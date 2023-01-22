@@ -25,5 +25,8 @@ This is an example of how you may give instructions on setting up your project l
 ![Screenshot 2023-01-22 134406](https://user-images.githubusercontent.com/94596185/213904147-1db058f7-6382-4990-a869-0f7f50b54be1.jpg)
 
 3. In terminal change `Powershell` to `Command Prompt`
+
+![Screenshot 2023-01-22 134912](https://user-images.githubusercontent.com/94596185/213905661-33a48391-3ff5-4ebd-a82a-66e789a07fe4.jpg)
+
 4. Use command `cd folder name`. Example `cd XO_GAME-master`
-5. 
+
