@@ -10,4 +10,4 @@ This is an example of how you may give instructions on setting up your project l
 1. Click green button `Code`
 2. Click `Download ZIP` for open project in local.
 
-![Screenshot 2023-01-22 132529](https://user-images.githubusercontent.com/94596185/213903547-c055ec19-b628-4bac-abbd-d474c7976c02.jpg)
+![download ](https://user-images.githubusercontent.com/94596185/213903569-972b3e78-896e-476a-b1cb-29c9f8ecf224.jpg)
