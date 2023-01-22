@@ -37,7 +37,7 @@ This is an example of how you may give instructions on setting up your project l
 9. Enjoy with project!
 
 ## Design
-Font End
+### Font End
 1. Create component of Game. By component this game include
 Square, Board, ValueSize, Hitory and Game. 
 2. Square component use for put on Board component. 
@@ -53,3 +53,14 @@ set size in ValueSize component.
 3. In file Game component will have use all component follow in figure
 
 ![game](https://user-images.githubusercontent.com/94596185/213908825-2e7e321a-4eb1-4480-89d6-d400186aca2a.jpg)
+
+4. Fuction in Board component link to on click of Square component for check player X or O and set history each step.
+
+![handle](https://user-images.githubusercontent.com/94596185/213913006-c4d2e9c6-67b5-4bf8-971d-5c62a9c4feb3.jpg)
+
+### Back End
+this project use realtime-firebase for keep data history of game XO. Database structure will use JSON pattern.
+
+**Connecting to database** 
+1. Create firebase in [link (click get started)](https://firebase.google.com/) 
+
