@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Getting Started 
+This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Tool required in project (This Project Built with React App)
+1. Visual Studio Code    [download](https://code.visualstudio.com/)
+2. Node JS   [download](https://nodejs.org/en/)
+3. npm
 
-In the project directory, you can run:
 
-### `npm start`
+## How to set-up
+1. Click green button `Code`
+2. Click `Download ZIP` for open project in local.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![download ](https://user-images.githubusercontent.com/94596185/213903569-972b3e78-896e-476a-b1cb-29c9f8ecf224.jpg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Download and Extract File.
 
-### `npm test`
+## How to run project
+1. Open `Visual Studio Code`
+2. Click `File` > `Open Folder...` and find folder form location Extract File.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 2023-01-22 133551](https://user-images.githubusercontent.com/94596185/213903873-2a88f772-9f78-4b32-a45b-511c1790edbe.jpg)
 
-### `npm run build`
+3. Open project and Check file in project.
+4. Click tool bar `Terminal` > `New Terminal`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 2023-01-22 134406](https://user-images.githubusercontent.com/94596185/213904147-1db058f7-6382-4990-a869-0f7f50b54be1.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. In terminal change `Powershell` to `Command Prompt`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2023-01-22 134912](https://user-images.githubusercontent.com/94596185/213905661-33a48391-3ff5-4ebd-a82a-66e789a07fe4.jpg)
 
-### `npm run eject`
+6. Use command `cd folder name`. Example `cd XO_GAME-master`
+7. Install packet for app `npm i react-scripts`
+8. After install packet you can run app with command `npm start`
+9. Enjoy with project!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Design
+Font End
+1. Create component of Game. By component this game include
+Square, Board, ValueSize, Hitory and Game. 
+2. Square component use for put on Board component. 
+And generate new button array in Board component and size of array
+set size in ValueSize component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![square](https://user-images.githubusercontent.com/94596185/213908265-84462db8-e094-4080-b7cb-0831ff274d9e.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![board](https://user-images.githubusercontent.com/94596185/213908282-9e9fe375-465d-4ef5-a929-0389c8a1a498.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![value](https://user-images.githubusercontent.com/94596185/213908549-9950ac16-90ff-4d0c-9784-cae88e2c93a0.jpg)
 
-## Learn More
+3. In file Game component will have use all component follow in figure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![game](https://user-images.githubusercontent.com/94596185/213908825-2e7e321a-4eb1-4480-89d6-d400186aca2a.jpg)
