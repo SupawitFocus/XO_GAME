@@ -29,37 +29,39 @@ const Game = () => {
     setXisNext(!xIsNext);
   };
 
-  const onAddNewItem = (NewValue) => {
-    let a = NewValue ** 2;
+  const onAddNewItem = (Value) => {
+    let NewValue = Value ** 2;
     history[0] = [];
     setSize(history[0]);
     console.log(size);
-    for (let i = 0; i < a; i++) {
+    for (let i = 0; i < NewValue; i++) {
       history[0].push("");
     }
-    setBoard("repeat(" + NewValue + ", auto)");
-    createCombinations(history[0].length, NewValue);
+    setBoard("repeat(" + Value + ", auto)");
+    createCombinations(history[0].length, Value);
   };
-  const jumpTo = (step) => {
-    setStepNumber(step);
-    setXisNext(step % 2 === 0);
-  };
+  
+  // const jumpTo = (step) => {
+  //   setStepNumber(step);
+  //   setXisNext(step % 2 === 0);
+  // };
 
-  const renderMoves = () =>
-    history.map((_step, move) => {
-      const destination = move ? `Go to move #${move}` : "Go to Start";
-      return (
-        <li key={move}>
-          <button className="btn-history" onClick={() => jumpTo(move)}>{destination}</button>
-        </li>
-      );
-    });
+  // const renderMoves = () =>
+  //   history.map((_step, move) => {
+  //     const destination = move ? `Go to move #${move}` : "Go to Start";
+  //     return (
+  //       <li key={move}>
+  //         <button className="btn-history" onClick={() => jumpTo(move)}>{destination}</button>
+  //       </li>
+  //     );
+  //   });
 
   let status;
 
   const setData = () => {
     set(ref(db, "history/" + new Date().getTime()), {
       size: size,
+      boardSize: board,
       history: history[stepNumber],
       winner: status,
       date: new Date().toLocaleDateString("en-US"),
