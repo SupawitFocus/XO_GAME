@@ -80,4 +80,13 @@ this project use realtime-firebase for keep data history of game XO. Database st
 
 ![Screenshot 2023-01-22 191217](https://user-images.githubusercontent.com/94596185/213915126-4c29b057-c180-4fcb-87a3-d72fcca37bbf.jpg)
 
+**Example Data in Firebase**
 
+![example](https://user-images.githubusercontent.com/94596185/213915260-ab9d6a52-bf43-4ba0-b5d2-391ad8c3f7eb.jpg)
+
+### Get data from Firebase
+In getting data form firebase i will create history page. By create fuction and return each data for componenet.
+
+![Screenshot 2023-01-22 192750](https://user-images.githubusercontent.com/94596185/213915778-b139a662-cc6a-4ed3-9eeb-87b613632f3d.jpg)
+
+![Screenshot 2023-01-22 192835](https://user-images.githubusercontent.com/94596185/213915814-1583c0e5-8b8e-4c40-b268-50a7fb0dad39.jpg)
