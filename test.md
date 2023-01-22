@@ -29,4 +29,6 @@ This is an example of how you may give instructions on setting up your project l
 ![Screenshot 2023-01-22 134912](https://user-images.githubusercontent.com/94596185/213905661-33a48391-3ff5-4ebd-a82a-66e789a07fe4.jpg)
 
 4. Use command `cd folder name`. Example `cd XO_GAME-master`
-
+5. Install packet for app `npm i react-scripts`
+6. After install packet you can run app with command `npm start`
+7. Enjoy with project!
