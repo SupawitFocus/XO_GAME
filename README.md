@@ -75,3 +75,9 @@ this project use realtime-firebase for keep data history of game XO. Database st
 4. Create file and paste code initialize Firebase for Connect the database to the project. 
 
 ![connect](https://user-images.githubusercontent.com/94596185/213914551-11019188-2dd8-4354-8c92-5e02197aa910.jpg)
+
+5. Create fuction for set data to firebase name part `history`. And create name object from date for unique. By each id have childen key is size, history, winner, date and time.
+
+![Screenshot 2023-01-22 191217](https://user-images.githubusercontent.com/94596185/213915126-4c29b057-c180-4fcb-87a3-d72fcca37bbf.jpg)
+
+
