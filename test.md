@@ -35,3 +35,23 @@ This is an example of how you may give instructions on setting up your project l
 7. Install packet for app `npm i react-scripts`
 8. After install packet you can run app with command `npm start`
 9. Enjoy with project!
+
+## Design
+Font End
+1. Create component of Game. By component this game include
+Square, Board, ValueSize, Hitory and Game. 
+2. Square component use for put on Board component. 
+And generate new button array in Board component and size of array
+set size in ValueSize component.
+
+![square](https://user-images.githubusercontent.com/94596185/213908265-84462db8-e094-4080-b7cb-0831ff274d9e.jpg)
+
+![board](https://user-images.githubusercontent.com/94596185/213908282-9e9fe375-465d-4ef5-a929-0389c8a1a498.jpg)
+
+![value](https://user-images.githubusercontent.com/94596185/213908549-9950ac16-90ff-4d0c-9784-cae88e2c93a0.jpg)
+
+3. In file Game component will have use all component follow in figure
+
+![game](https://user-images.githubusercontent.com/94596185/213908825-2e7e321a-4eb1-4480-89d6-d400186aca2a.jpg)
+
+
