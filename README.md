@@ -69,8 +69,7 @@ this project use realtime-firebase for keep data history of game XO. Database st
 
 3. Add Firebase to your web app. and copy code for initialize Firebase.
 
-
-![web](https://user-images.githubusercontent.com/94596185/213914611-2cfdfa74-9d23-47e2-8374-d6714492ff01.jpg)
+![web](https://user-images.githubusercontent.com/94596185/213914658-adb3d68a-adec-4140-bc6f-a5fbb7e293a1.jpg)
 ![generate](https://user-images.githubusercontent.com/94596185/213914532-09e22598-fe00-4a8f-865e-2f73bda255e1.jpg)
 
 4. Create file and paste code initialize Firebase for Connect the database to the project. 
