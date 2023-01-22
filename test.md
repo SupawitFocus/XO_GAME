@@ -1,11 +1,12 @@
-# Getting Started
+# Getting Started 
 This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
-## Tool required in project
+
+## Tool required in project (This Project Built with React App)
 1. Visual Studio Code    [download](https://code.visualstudio.com/)
 2. Node JS   [download](https://nodejs.org/en/)
 3. npm
- *** This Project with Create React App
+
 
 ## How to set-up
 1. Click green button `Code`
