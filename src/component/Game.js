@@ -16,12 +16,12 @@ const Game = () => {
   let winner = calWinner(history[stepNumber], Ox);
   
 
-  const historyPoint = history.slice(0, stepNumber + 1);
-  const current = history[stepNumber];
-  const squares = [...current];
+  
   useEffect(()=>{
     const putO = (i) =>{
-      console.log(squares[i] + "   " + i)
+      const historyPoint = history.slice(0, stepNumber + 1);
+      const current = history[stepNumber];
+      const squares = [...current];
       if (winner || squares[i]) {
         return;
       }
@@ -33,17 +33,15 @@ const Game = () => {
     if(!xIsNext){
       const emp = history[stepNumber].map((s, i)=>  s==="" ? i : null).filter(val => val !== null)
       const randomIndex = emp[Math.ceil(Math.random()*emp.length-1)]
-      console.log(randomIndex)
-      console.log(emp)
       // console.log(randomIndex)
       putO(Math.ceil(randomIndex))
     }
-  }, [squares])
+  })
 
   const handleClick = (i) => {
-    // const historyPoint = history.slice(0, stepNumber + 1);
-    // const current = history[stepNumber];
-    // const squares = [...current];
+    const historyPoint = history.slice(0, stepNumber + 1);
+    const current = history[stepNumber];
+    const squares = [...current];
     if (winner || squares[i]) {
       return;
     }
