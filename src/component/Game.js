@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Board from "./Board";
 import ValueSize from "./ValueSize";
 import { createCombinations, calWinner } from "../Calwinner";
 import { db } from "../utils/firebase";
 import { set, ref } from "firebase/database";
-
 
 const Game = () => {
   let [history, setHistory] = useState([Array(0).fill("")]);
@@ -16,17 +15,44 @@ const Game = () => {
   const Ox = !xIsNext ? "X" : "O";
   let winner = calWinner(history[stepNumber], Ox);
   
+
+  const historyPoint = history.slice(0, stepNumber + 1);
+  const current = history[stepNumber];
+  const squares = [...current];
+  useEffect(()=>{
+    const putO = (i) =>{
+      console.log(squares[i] + "   " + i)
+      if (winner || squares[i]) {
+        return;
+      }
+      squares[i] = xO;
+      setHistory([...historyPoint, squares]);
+      setStepNumber(historyPoint.length);
+      setXisNext(!xIsNext);
+    }
+    if(!xIsNext){
+      const emp = history[stepNumber].map((s, i)=>  s==="" ? i : null).filter(val => val !== null)
+      const randomIndex = emp[Math.ceil(Math.random()*emp.length-1)]
+      console.log(randomIndex)
+      console.log(emp)
+      // console.log(randomIndex)
+      putO(Math.ceil(randomIndex))
+    }
+  }, [squares])
+
   const handleClick = (i) => {
-    const historyPoint = history.slice(0, stepNumber + 1);
-    const current = history[stepNumber];
-    const squares = [...current];
+    // const historyPoint = history.slice(0, stepNumber + 1);
+    // const current = history[stepNumber];
+    // const squares = [...current];
     if (winner || squares[i]) {
       return;
     }
-    squares[i] = xO;
-    setHistory([...historyPoint, squares]);
-    setStepNumber(historyPoint.length);
-    setXisNext(!xIsNext);
+    if(xIsNext){
+      squares[i] = xO;
+      setHistory([...historyPoint, squares]);
+      setStepNumber(historyPoint.length);
+      setXisNext(!xIsNext);
+    }
   };
 
   const onAddNewItem = (Value) => {
